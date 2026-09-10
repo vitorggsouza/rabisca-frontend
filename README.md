@@ -70,7 +70,7 @@ rabisca-frontend/
 │   │       │   ├── favicon-16x16.png
 │   │       │   ├── favicon-32x32.png
 │   │       │   └── favicon.svg
-│   │       ├── developer.svg
+│   │       ├── developer.webp
 │   │       ├── hero.svg
 │   │       ├── logo.svg
 │   │       └── palette.jpeg
