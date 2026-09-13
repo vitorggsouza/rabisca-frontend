@@ -1,2 +1,3 @@
-import 'bootstrap';
-console.log('Olá, mundo!');
+import * as toggleTheme from './core/toggle-theme.js';
+
+toggleTheme.init();

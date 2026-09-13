@@ -4,7 +4,8 @@ const isWatchMode = process.argv.includes('--watch');
 
 const cssConfiguration = {
   entryPoints: {
-    'main.min': './source/css/main.css'
+    'main.min': './source/css/main.css',
+    'home.min': './source/css/views/home.css'
   },
   bundle: true,
   sourcemap: isWatchMode,
@@ -30,10 +31,13 @@ const main = async () => {
   if (isWatchMode) {
     const cssContext = await esbuild.context(cssConfiguration);
     const javascriptContext = await esbuild.context(javascriptConfiguration);
+
     await Promise.all([cssContext.watch(), javascriptContext.watch()]);
+
     console.log('Watching for changes...');
   } else {
     await Promise.all([esbuild.build(cssConfiguration), esbuild.build(javascriptConfiguration)]);
+
     console.log('Build completed successfully.');
   }
 };
@@ -42,5 +46,6 @@ try {
   await main();
 } catch (error) {
   console.error('Build failed:', error);
+
   process.exit(1);
 }

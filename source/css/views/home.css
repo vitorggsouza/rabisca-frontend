@@ -1,0 +1,19 @@
+@import '../components/button.css';
+
+@media (min-width: 576px) {
+  .hero-image-container img {
+    width: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-image-container img {
+    width: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-image-container img {
+    width: 550px;
+  }
+}
