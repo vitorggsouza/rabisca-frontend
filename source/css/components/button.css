@@ -1,0 +1,22 @@
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: color-mix(in srgb, var(--bs-primary) 85.23%, #000);
+  --bs-btn-hover-border-color: color-mix(in srgb, var(--bs-primary) 84.52%, #000);
+  --bs-btn-focus-shadow-rgb: 112, 177, 200;
+  --bs-btn-active-bg: color-mix(in srgb, var(--bs-primary) 80%, #000);
+  --bs-btn-active-border-color: color-mix(in srgb, var(--bs-primary) 79%, #000);
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: var(--bs-primary);
+  --bs-btn-hover-border-color: var(--bs-primary);
+  --bs-btn-active-bg: var(--bs-primary);
+  --bs-btn-active-border-color: var(--bs-primary);
+  --bs-btn-disabled-color: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+}

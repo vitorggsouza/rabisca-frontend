@@ -1,6 +1,24 @@
-@import 'bootstrap/dist/css/bootstrap.css';
-@import 'bootstrap-icons/font/bootstrap-icons.css';
+:root,
+[data-bs-theme=light] {
+  --bs-primary: #0378a6;
+  --bs-primary-rgb: 3, 120, 166;
+  --bs-primary-text-emphasis: color-mix(in srgb, var(--bs-primary) 54%, #000);
+  --bs-primary-bg-subtle: color-mix(in srgb, var(--bs-primary) 14.08%, #fff);
+  --bs-primary-border-subtle: color-mix(in srgb, var(--bs-primary) 39.63%, #fff);
+  --bs-link-color: var(--bs-primary);
+  --bs-link-color-rgb: var(--bs-primary-rgb);
+  --bs-link-hover-color: color-mix(in srgb, var(--bs-primary) 84.52%, #000);
+  --bs-link-hover-color-rgb: 3, 101, 140;
+  --bs-focus-ring-color: rgba(var(--bs-primary), 0.25);
+}
 
-h1 {
-  color: red;
+[data-bs-theme=dark] {
+  color-scheme: dark;
+  --bs-primary-text-emphasis: color-mix(in srgb, var(--bs-primary) 42.81%, #fff);
+  --bs-primary-bg-subtle: color-mix(in srgb, var(--bs-primary) 30.14%, #000);
+  --bs-primary-border-subtle: color-mix(in srgb, var(--bs-primary) 38.35%, #000);
+  --bs-link-color: color-mix(in srgb, var(--bs-primary) 42.7%, #fff);
+  --bs-link-hover-color: color-mix(in srgb, var(--bs-primary) 34.31%, #fff);
+  --bs-link-color-rgb: 147, 197, 217;
+  --bs-link-hover-color-rgb: 169, 209, 224;
 }
